@@ -1,0 +1,16 @@
+<body>
+    <h1 id="name">{{name}}</h1>
+    <h1 id="color">{{color.firstColor}}</h1>
+</body>
+<script src="./index.js"></script>
+<script type="text/javascript">
+    var ele = document.querySelector('#name');
+    var selfVue = new SelfVue({name: 'hello world',color: {firstColor:'red'}}, ele, 'name');
+ 
+    // window.setTimeout(function () {
+    //     console.log('name值改变了');
+    //     selfVue.data.name = 'canfoo';
+    //     selfVue.data.color.firstColor = 'green'
+    // }, 2000);
+ 
+</script>
